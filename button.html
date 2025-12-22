@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <CENTER>
+            <DIV>
+   <h1>LOGIN FORM</h1>
+   Name: <input type="text" id="txtname">
+   <br><br>
+   Password: <input type="password" id="pass">
+   <br><br>
+   <input type="submit" id="btn" value="signin" onclick="check()">
+   <label id="sub">
+    your status
+   </label>
+   </DIV>
+   </CENTER>
+   <script>
+    function check(){
+       var username = document.getElementById('txtname').value;
+       var password = document.getElementById('pass').value;
+
+       if(username === "msksingh" && password === "1234"){
+        var x = document.getElementById('sub');
+        x.innerText = "your are active";
+        x.style.color = "green";
+       }
+       else{
+         var x = document.getElementById('sub');
+        x.innerText = "your are not active";
+        x.style.color = "red";
+       }
+
+    }
+   </script>
+
+</body>
+</html>
